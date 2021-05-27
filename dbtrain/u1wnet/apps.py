@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class WnetConfig(AppConfig):
-    name = 'wnet'
+class U1WnetConfig(AppConfig):
+    name = 'u1wnet'

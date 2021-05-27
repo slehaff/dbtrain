@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class KnetConfig(AppConfig):
-    name = 'knet'
+class U2KnetConfig(AppConfig):
+    name = 'u2knet'
