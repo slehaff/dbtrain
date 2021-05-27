@@ -1,9 +1,12 @@
 from django.db import models
 from django.urls import reverse
+from django.contrib import admin
+
+
 
 # Create your models here.
 
-class Un2models(models.Model):
+class Un2model(models.Model):
 
     path=models.FilePathField(path ="/home/images",
               match ="u1models.*", 
@@ -36,3 +39,4 @@ class ValidationData(models.Model):
     samples=models.IntegerField()
     datecreated=models.DateField()
 # Create your models here.
+

@@ -1,3 +1,10 @@
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
 
+from .models import *
+
+
+
+# admin.site.register(Un2model,TrainingData,ValidationData)
 # Register your models here.
+

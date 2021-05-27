@@ -1,9 +1,9 @@
 from django.db import models
 from django.urls import reverse
+from django.contrib import admin
 
 # Create your models here.
-
-class Un1models(models.Model):
+class Un1model(models.Model):
 
     path=models.FilePathField(path ="/home/images",
               match ="u1models.*", 
@@ -27,7 +27,6 @@ class TrainingData(models.Model):
     samples=models.IntegerField()
     datecreated=models.DateField()
 
-
 class ValidationData(models.Model):
     path=models.FilePathField(path ="/home/images",
               match ="u1models.*", 
@@ -35,3 +34,7 @@ class ValidationData(models.Model):
     name=models.CharField(max_length=128)
     samples=models.IntegerField()
     datecreated=models.DateField()
+
+
+
+
