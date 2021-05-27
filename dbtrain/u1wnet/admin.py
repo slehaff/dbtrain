@@ -7,10 +7,10 @@ from .models import *
 
 
 
-class U1modelAdmin(admin.ModelAdmin):
+class Un1modelAdmin(admin.ModelAdmin):
     fields = ['name', 'version']
 
-admin.site.register(Un1model, U1modelAdmin)
+admin.site.register(Un1model, Un1modelAdmin)
 
 
 
