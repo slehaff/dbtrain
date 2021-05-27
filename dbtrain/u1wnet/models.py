@@ -16,3 +16,22 @@ class Un1models(models.Model):
     datecreated=models.DateTimeField(auto_created=True, blank=True)
     dateupdated=models.DateTimeField(auto_now_add=True, blank=True)
     hyperparams= models.TextField()
+
+
+class TrainingData(models.Model):
+
+    path=models.FilePathField(path ="/home/images",
+              match ="u1models.*", 
+              recursive = True)
+    name=models.CharField(max_length=128)
+    samples=models.IntegerField()
+    datecreated=models.DateField()
+
+
+class ValidationData(models.Model):
+    path=models.FilePathField(path ="/home/images",
+              match ="u1models.*", 
+              recursive = True)
+    name=models.CharField(max_length=128)
+    samples=models.IntegerField()
+    datecreated=models.DateField()
