@@ -10,4 +10,4 @@ def u1net_detail_view(request):
     context = {
         'form': form
     }
-    return render(request, 'u1net/u1net_detail.html', context)
+    return render(request, 'u1wnet/u1net_detail.html', context)
