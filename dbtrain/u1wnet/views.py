@@ -17,7 +17,9 @@ def contact(request):
 
 def u1net_detail_view(request):
     form = Un1modelForm(request.POST or None)
-    obj = Un1model.objects.get(id=1)
+    if form.is_valid():
+        form.save()
+    # obj = Un1model.objects.get(id=1)
     context = {
         'form': form
     }
