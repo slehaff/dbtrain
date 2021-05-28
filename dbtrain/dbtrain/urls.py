@@ -16,21 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from django.http import HttpResponse
-def home(request):
-    return HttpResponse('Home Page')
 
-def about(request):
-    return HttpResponse('About Page')
-
-def contact(request):
-    return HttpResponse('Contact Page')
 
 
 urlpatterns = [
-    path('u1wnet/', include('u1wnet.urls') ),
+    path('', include('u1wnet.urls') ),
     path('admin/', admin.site.urls),
-    path('', home),
-    path('about/', about),
-    path('contact/', contact)
+
 ]

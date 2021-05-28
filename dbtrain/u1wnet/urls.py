@@ -8,7 +8,9 @@ urlpatterns = [
 
 
     path('detail/', views.u1net_detail_view),
-    # path('', home )
+    path('', views.home),
+    path('about/', views.about),
+    path('contact/', views.contact)
 
 
 ]
