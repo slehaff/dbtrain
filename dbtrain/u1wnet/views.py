@@ -15,6 +15,9 @@ def about(request):
 def contact(request):
     return HttpResponse('Contact Page')
 
+def detail(request):
+    return HttpResponse('Detail Page')
+
 def u1net_detail_view(request):
     form = Un1modelForm(request.POST or None)
     if form.is_valid():
